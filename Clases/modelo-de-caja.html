@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: plum;
+            padding: 20px;
+            /* La función border-box permite que, aún despúes de añadir más volúmenes para márgenes, la sumatoria de las mismas no supere el valor en pixeles especificado en content */
+            box-sizing: border-box;
+            border: 1px solid hotpink;
+            /* margin permite añadir un margen o espacio exterior a las cajas, esto evitaría que se solapen */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <!-- El estilo está afectando a "es lo máximo" debido a que se están modificando todos los elementos div en estilos -->
+    <div>Es lo máximo</div>
+</body>
+</html>
