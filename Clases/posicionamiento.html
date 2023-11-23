@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+            width: 200px;
+            height: 200px;
+            background: papayawhip;
+            position: relative;
+            top: 20px;
+        }
+        /* PENDIENTE EL RETO DE HACER QUE EL ITEM SE MUEVA DENTRO DEL CONTAINER */
+        .item {
+            width: 20px;
+            height: 20px;
+            background: hotpink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background: lightcyan;
+            position: fixed;
+            top: 0;   
+        }
+        ul p {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est a nisl sollicitudin gravida at eget dolor. Maecenas iaculis rutrum tellus sit amet vulputate. Proin in luctus dolor. Phasellus sit amet augue eros. Etiam facilisis turpis sed enim euismod, vel luctus dolor vestibulum. Maecenas eget risus in erat pulvinar ornare. Aliquam elementum nisl ut porttitor maximus.
+
+        Curabitur placerat in nisi ac sollicitudin. Phasellus mi nunc, sollicitudin at sapien non, blandit finibus quam. Quisque et aliquam dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus malesuada massa quis sollicitudin. In sed varius enim, sit amet rutrum ipsum. In interdum orci diam, a cursus dui cursus commodo. In convallis justo a consectetur tempor. Nunc fringilla commodo massa, quis sodales enim laoreet euismod. Morbi tincidunt mi orci, quis euismod ante sagittis et. Nullam consectetur luctus felis, non fringilla diam vestibulum non.
+        
+        In condimentum dolor quis mollis sagittis. Nulla a vulputate nisi, egestas interdum dolor. Praesent ac justo lorem. Nulla quis finibus ex. Aliquam hendrerit eu nibh quis accumsan. Curabitur nunc nisi, ornare eu elementum in, tincidunt vitae turpis. Proin posuere est vitae libero sodales mollis vitae sed dui. Nunc lobortis efficitur felis, ut efficitur mauris elementum sit amet. Ut vestibulum leo vitae eros laoreet, eu condimentum mi pulvinar. Praesent id orci odio. Integer ullamcorper justo sed neque laoreet pharetra. Quisque efficitur egestas odio non blandit. Quisque malesuada sem a dolor accumsan, id pharetra enim porttitor.
+        
+        Curabitur lobortis, erat ultrices elementum eleifend, libero neque luctus sem, ut congue dolor turpis quis tortor. Mauris dignissim lorem dictum turpis feugiat lacinia. Sed mollis tortor vel turpis tristique, nec commodo mi pretium. Etiam fringilla lectus quis turpis lacinia, vel aliquet diam rhoncus. Integer sed nunc fermentum sapien maximus egestas sed eu nunc. Nullam in ultricies mi, at tristique mauris. Fusce metus turpis, interdum sit amet feugiat ut, condimentum et quam. Praesent non rhoncus mauris, cursus accumsan leo. Aliquam id imperdiet velit. Integer vel lacus eget eros luctus pharetra in sed lacus.
+        
+        Aliquam vestibulum hendrerit turpis vitae viverra. Proin venenatis elit justo, eget viverra augue laoreet et. Ut in mauris lobortis, sollicitudin eros sed, fermentum turpis. Suspendisse turpis leo, sodales non convallis a, viverra non nisi. Quisque at aliquam leo. Nam vitae velit in nisl varius porttitor ac eu urna. Quisque vel dignissim diam. Suspendisse ut porttitor erat, in cursus erat. Aenean at massa tortor. Pellentesque sagittis ligula id justo accumsan dictum. Sed ultrices vitae massa et elementum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est a nisl sollicitudin gravida at eget dolor. Maecenas iaculis rutrum tellus sit amet vulputate. Proin in luctus dolor. Phasellus sit amet augue eros. Etiam facilisis turpis sed enim euismod, vel luctus dolor vestibulum. Maecenas eget risus in erat pulvinar ornare. Aliquam elementum nisl ut porttitor maximus.
+
+        Curabitur placerat in nisi ac sollicitudin. Phasellus mi nunc, sollicitudin at sapien non, blandit finibus quam. Quisque et aliquam dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus malesuada massa quis sollicitudin. In sed varius enim, sit amet rutrum ipsum. In interdum orci diam, a cursus dui cursus commodo. In convallis justo a consectetur tempor. Nunc fringilla commodo massa, quis sodales enim laoreet euismod. Morbi tincidunt mi orci, quis euismod ante sagittis et. Nullam consectetur luctus felis, non fringilla diam vestibulum non.
+        
+        In condimentum dolor quis mollis sagittis. Nulla a vulputate nisi, egestas interdum dolor. Praesent ac justo lorem. Nulla quis finibus ex. Aliquam hendrerit eu nibh quis accumsan. Curabitur nunc nisi, ornare eu elementum in, tincidunt vitae turpis. Proin posuere est vitae libero sodales mollis vitae sed dui. Nunc lobortis efficitur felis, ut efficitur mauris elementum sit amet. Ut vestibulum leo vitae eros laoreet, eu condimentum mi pulvinar. Praesent id orci odio. Integer ullamcorper justo sed neque laoreet pharetra. Quisque efficitur egestas odio non blandit. Quisque malesuada sem a dolor accumsan, id pharetra enim porttitor.
+        
+        Curabitur lobortis, erat ultrices elementum eleifend, libero neque luctus sem, ut congue dolor turpis quis tortor. Mauris dignissim lorem dictum turpis feugiat lacinia. Sed mollis tortor vel turpis tristique, nec commodo mi pretium. Etiam fringilla lectus quis turpis lacinia, vel aliquet diam rhoncus. Integer sed nunc fermentum sapien maximus egestas sed eu nunc. Nullam in ultricies mi, at tristique mauris. Fusce metus turpis, interdum sit amet feugiat ut, condimentum et quam. Praesent non rhoncus mauris, cursus accumsan leo. Aliquam id imperdiet velit. Integer vel lacus eget eros luctus pharetra in sed lacus.
+        
+        Aliquam vestibulum hendrerit turpis vitae viverra. Proin venenatis elit justo, eget viverra augue laoreet et. Ut in mauris lobortis, sollicitudin eros sed, fermentum turpis. Suspendisse turpis leo, sodales non convallis a, viverra non nisi. Quisque at aliquam leo. Nam vitae velit in nisl varius porttitor ac eu urna. Quisque vel dignissim diam. Suspendisse ut porttitor erat, in cursus erat. Aenean at massa tortor. Pellentesque sagittis ligula id justo accumsan dictum. Sed ultrices vitae massa et elementum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est a nisl sollicitudin gravida at eget dolor. Maecenas iaculis rutrum tellus sit amet vulputate. Proin in luctus dolor. Phasellus sit amet augue eros. Etiam facilisis turpis sed enim euismod, vel luctus dolor vestibulum. Maecenas eget risus in erat pulvinar ornare. Aliquam elementum nisl ut porttitor maximus.
+
+        Curabitur placerat in nisi ac sollicitudin. Phasellus mi nunc, sollicitudin at sapien non, blandit finibus quam. Quisque et aliquam dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus malesuada massa quis sollicitudin. In sed varius enim, sit amet rutrum ipsum. In interdum orci diam, a cursus dui cursus commodo. In convallis justo a consectetur tempor. Nunc fringilla commodo massa, quis sodales enim laoreet euismod. Morbi tincidunt mi orci, quis euismod ante sagittis et. Nullam consectetur luctus felis, non fringilla diam vestibulum non.
+        
+        In condimentum dolor quis mollis sagittis. Nulla a vulputate nisi, egestas interdum dolor. Praesent ac justo lorem. Nulla quis finibus ex. Aliquam hendrerit eu nibh quis accumsan. Curabitur nunc nisi, ornare eu elementum in, tincidunt vitae turpis. Proin posuere est vitae libero sodales mollis vitae sed dui. Nunc lobortis efficitur felis, ut efficitur mauris elementum sit amet. Ut vestibulum leo vitae eros laoreet, eu condimentum mi pulvinar. Praesent id orci odio. Integer ullamcorper justo sed neque laoreet pharetra. Quisque efficitur egestas odio non blandit. Quisque malesuada sem a dolor accumsan, id pharetra enim porttitor.
+        
+        Curabitur lobortis, erat ultrices elementum eleifend, libero neque luctus sem, ut congue dolor turpis quis tortor. Mauris dignissim lorem dictum turpis feugiat lacinia. Sed mollis tortor vel turpis tristique, nec commodo mi pretium. Etiam fringilla lectus quis turpis lacinia, vel aliquet diam rhoncus. Integer sed nunc fermentum sapien maximus egestas sed eu nunc. Nullam in ultricies mi, at tristique mauris. Fusce metus turpis, interdum sit amet feugiat ut, condimentum et quam. Praesent non rhoncus mauris, cursus accumsan leo. Aliquam id imperdiet velit. Integer vel lacus eget eros luctus pharetra in sed lacus.
+        
+        Aliquam vestibulum hendrerit turpis vitae viverra. Proin venenatis elit justo, eget viverra augue laoreet et. Ut in mauris lobortis, sollicitudin eros sed, fermentum turpis. Suspendisse turpis leo, sodales non convallis a, viverra non nisi. Quisque at aliquam leo. Nam vitae velit in nisl varius porttitor ac eu urna. Quisque vel dignissim diam. Suspendisse ut porttitor erat, in cursus erat. Aenean at massa tortor. Pellentesque sagittis ligula id justo accumsan dictum. Sed ultrices vitae massa et elementum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est a nisl sollicitudin gravida at eget dolor. Maecenas iaculis rutrum tellus sit amet vulputate. Proin in luctus dolor. Phasellus sit amet augue eros. Etiam facilisis turpis sed enim euismod, vel luctus dolor vestibulum. Maecenas eget risus in erat pulvinar ornare. Aliquam elementum nisl ut porttitor maximus.
+
+        Curabitur placerat in nisi ac sollicitudin. Phasellus mi nunc, sollicitudin at sapien non, blandit finibus quam. Quisque et aliquam dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus malesuada massa quis sollicitudin. In sed varius enim, sit amet rutrum ipsum. In interdum orci diam, a cursus dui cursus commodo. In convallis justo a consectetur tempor. Nunc fringilla commodo massa, quis sodales enim laoreet euismod. Morbi tincidunt mi orci, quis euismod ante sagittis et. Nullam consectetur luctus felis, non fringilla diam vestibulum non.
+        
+        In condimentum dolor quis mollis sagittis. Nulla a vulputate nisi, egestas interdum dolor. Praesent ac justo lorem. Nulla quis finibus ex. Aliquam hendrerit eu nibh quis accumsan. Curabitur nunc nisi, ornare eu elementum in, tincidunt vitae turpis. Proin posuere est vitae libero sodales mollis vitae sed dui. Nunc lobortis efficitur felis, ut efficitur mauris elementum sit amet. Ut vestibulum leo vitae eros laoreet, eu condimentum mi pulvinar. Praesent id orci odio. Integer ullamcorper justo sed neque laoreet pharetra. Quisque efficitur egestas odio non blandit. Quisque malesuada sem a dolor accumsan, id pharetra enim porttitor.
+        
+        Curabitur lobortis, erat ultrices elementum eleifend, libero neque luctus sem, ut congue dolor turpis quis tortor. Mauris dignissim lorem dictum turpis feugiat lacinia. Sed mollis tortor vel turpis tristique, nec commodo mi pretium. Etiam fringilla lectus quis turpis lacinia, vel aliquet diam rhoncus. Integer sed nunc fermentum sapien maximus egestas sed eu nunc. Nullam in ultricies mi, at tristique mauris. Fusce metus turpis, interdum sit amet feugiat ut, condimentum et quam. Praesent non rhoncus mauris, cursus accumsan leo. Aliquam id imperdiet velit. Integer vel lacus eget eros luctus pharetra in sed lacus.
+        
+        Aliquam vestibulum hendrerit turpis vitae viverra. Proin venenatis elit justo, eget viverra augue laoreet et. Ut in mauris lobortis, sollicitudin eros sed, fermentum turpis. Suspendisse turpis leo, sodales non convallis a, viverra non nisi. Quisque at aliquam leo. Nam vitae velit in nisl varius porttitor ac eu urna. Quisque vel dignissim diam. Suspendisse ut porttitor erat, in cursus erat. Aenean at massa tortor. Pellentesque sagittis ligula id justo accumsan dictum. Sed ultrices vitae massa et elementum.</p>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+
+    <ul>
+        <p>Frutas</p>
+        <li>Manzana</li>
+        <li>Peras</li>
+        <li>Sandía</li>
+    </ul>
+</body>
+</html>
