@@ -9,6 +9,7 @@
             width: 200px;
             height: 200px;
             background: papayawhip;
+            /* El posicionamiento RELATIVE en comparación, funciona como cuando en powerpoint se envía un objeto atrás o se trae adelante */
             position: relative;
             top: 20px;
         }
@@ -17,6 +18,7 @@
             width: 20px;
             height: 20px;
             background: hotpink;
+            /* El elemento absolute se adhiere al ancestro de jerarquía más alta que tenga más cercano y no sea STATIC. Esto quiere decir que no se adherirá a un hermano o hijo */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -26,10 +28,12 @@
             width: 100%;
             height: 60px;
             background: lightcyan;
+            /* El elemento fixed se quedará adherido al punto específico que se le asigne. No se irá ni aunque se haga scroll  */
             position: fixed;
             top: 0;   
         }
         ul p {
+            /* El elemento sticky es una combinación de relative y fixed. Este se moverá en el plano como un RELATIVE hasta el punto donde se ha determinado que se comportará como un FIXED y quedará fijo */
             position: sticky;
             top: 0;
         }
