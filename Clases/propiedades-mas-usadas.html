@@ -5,82 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-family: Arial, sans-serif; /* Fuente común para todo el cuerpo */
+        }
+        /* Estilo común para las tarjetas */
+        .card {
+            width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Estilo específico para cada tarjeta */
+        .susy {
+            background: #FFE6F2;
+        }
+        .bruno {
+            background: #D6EEFC;
+        }
+        /* Estilo común para las imágenes dentro de las tarjetas */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        /* Posición específica para cada imagen */
+        .susy img {
+            object-position: center -30px;
+        }
+        .bruno img {
+            object-position: center -120px;
+        }
+        /* Estilo común para el contenido dentro de las tarjetas */
+        .card .content {
+            padding: 2px 15px;
+            flex-grow: 1;
+            text-align: center; /* Centra el texto horizontalmente */
+            color: darkslategrey;
+            font-size: 115%;
+        }
         section {
             width: 100%;
             display: flex;
             position: relative;
             justify-content: center;
-            
-        }
-        .susy {
-            width: 300px;
-            /* height: 300px; */
-            
-            background: #FFE6F2;
-            border-radius: 20px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        .susy img {
-            width: 100%; /* Ajusta la imagen al ancho del contenedor */
-            height: 200px; /* Define una altura fija para la imagen */
-            object-fit: cover; /* Esto recortará la imagen para ajustarse al contenedor */
-            object-position: center -30px;
-        }
-        .susy .content {
-            padding: 2px 15px;
-            flex-grow: 1;
-            font-family: Marker Felt, fantasy;
-            font-size: 115%;
-        }
-        .susy p {
-            text-align: bottom;
-            margin: 15px;
-            color: darkslategrey;
-        }
-        .bruno {
-            width: 300px;
-            /* height: 300px; */
-            background: #D6EEFC;
-            border-radius: 20px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            
-        }
-        .bruno img {
-            width: 100%; /* Ajusta la imagen al ancho del contenedor */
-            height: 200px; /* Define una altura fija para la imagen */
-            object-fit: cover; /* Esto recortará la imagen para ajustarse al contenedor */
-            object-position: center -120px;
-        }
-        .bruno .content {
-            padding: 2px 15px;
-            flex-grow: 1;
-            font-family: Marker Felt, fantasy;
-            font-size: 115%;
-        }
-        .susy p {
-            text-align: bottom;
-            margin: 15px;
-            color: darkslategrey;
         }
     </style>
 </head>
 <body>
     <nav>
-
+        <!-- Aquí irá tu barra de navegación -->
     </nav>
     <section>
-        <div class="susy">
-            <img src="https://images2.imgbox.com/b6/ad/k2nm9H8Q_o.png" alt="susy">
+        <div class="card susy">
+            <img src="https://images2.imgbox.com/b6/ad/k2nm9H8Q_o.png" alt="Susy descansando">
             <div class="content">
-                <p>Susy: Le gusta hacer pereza y le molesta la luz en las mañanas </p>
+                <p>Susy: Le gusta hacer pereza y le molesta la luz en las mañanas</p>
             </div>
         </div>
-        <div class="bruno">
-            <img src="https://images2.imgbox.com/5a/b9/1nLeXFa0_o.png" alt="">
+        <div class="card bruno">
+            <img src="https://images2.imgbox.com/5a/b9/1nLeXFa0_o.png" alt="Bruno fingiendo que le duele una pata">
             <div class="content">
                 <p>Bruno: Finge que le duele una pata para que lo consientan</p>
             </div>
