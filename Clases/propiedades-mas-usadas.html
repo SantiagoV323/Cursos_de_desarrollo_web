@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            
+        }
+        .susy {
+            width: 300px;
+            /* height: 300px; */
+            
+            background: #FFE6F2;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .susy img {
+            width: 100%; /* Ajusta la imagen al ancho del contenedor */
+            height: 200px; /* Define una altura fija para la imagen */
+            object-fit: cover; /* Esto recortará la imagen para ajustarse al contenedor */
+            object-position: center -30px;
+        }
+        .susy .content {
+            padding: 2px 15px;
+            flex-grow: 1;
+            font-family: Marker Felt, fantasy;
+            font-size: 115%;
+        }
+        .susy p {
+            text-align: bottom;
+            margin: 15px;
+            color: darkslategrey;
+        }
+        .bruno {
+            width: 300px;
+            /* height: 300px; */
+            background: #D6EEFC;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .bruno img {
+            width: 100%; /* Ajusta la imagen al ancho del contenedor */
+            height: 200px; /* Define una altura fija para la imagen */
+            object-fit: cover; /* Esto recortará la imagen para ajustarse al contenedor */
+            object-position: center -120px;
+        }
+        .bruno .content {
+            padding: 2px 15px;
+            flex-grow: 1;
+            font-family: Marker Felt, fantasy;
+            font-size: 115%;
+        }
+        .susy p {
+            text-align: bottom;
+            margin: 15px;
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <section>
+        <div class="susy">
+            <img src="https://images2.imgbox.com/b6/ad/k2nm9H8Q_o.png" alt="susy">
+            <div class="content">
+                <p>Susy: Le gusta hacer pereza y le molesta la luz en las mañanas </p>
+            </div>
+        </div>
+        <div class="bruno">
+            <img src="https://images2.imgbox.com/5a/b9/1nLeXFa0_o.png" alt="">
+            <div class="content">
+                <p>Bruno: Finge que le duele una pata para que lo consientan</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
