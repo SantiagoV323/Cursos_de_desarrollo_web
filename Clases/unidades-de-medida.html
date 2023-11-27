@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* Al definir 62.5% se puede hacer un cálculo más fácil para determinar a cuántos px equivale un rem, por ejemplo, un rem de 4.3 * 10% = 43px. Para ello se debe hacer el cálculo con regla de 3 */
+            /* Donde (10[el porcentaje que se quiere usar para calcular]
+                        *100[el total])
+                                /16[el valor default] = 62.5 y este valor será igual a 10px */
+            font-size: 62.65%;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        p {
+            /* Por defecto, el font-size es de 16px, 1rem = 1 medida definida, en este caso, es igual a 16px, si fueran 2 rem, sería igual a 32px. Si la unidad especificada fueran 20px, 2rem sería igual a 40px*/
+            /* En la línea 8 se puede ver cómo se defini la unidad */
+            font-size: 1rem;
+        }
+        .container {
+            width: 100px;
+            height: 100vh;
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <p>Platzi master</p>
+    <div class="container"></div>
+</body>
+</html>
