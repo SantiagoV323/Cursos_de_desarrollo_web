@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: purple;
+        }
+        /* De esta forma se está indicando que, a partir de 300px tomará las propiedades que se encuentren en @media */
+        /* Si se usa max-width, pasará lo opuesto, de 300px hacia atrás, tomará las propiedades definidas en la función @media */
+        @media (min-widht: 300px) {
+            div {
+                background: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+</body>
+</html>
