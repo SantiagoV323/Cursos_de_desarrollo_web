@@ -1,0 +1,1 @@
+### Acá se presentan los ejercicios y notas de algunos cursos de la ruta frontend de platzi
