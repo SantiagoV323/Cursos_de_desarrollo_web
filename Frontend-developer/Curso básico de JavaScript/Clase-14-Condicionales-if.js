@@ -45,3 +45,26 @@ edad === 18 ? console.log("Puedes votar") : console.log("No puedes votar");
 var numero = 1;
 
 numero === 1 ? console.log("Soy un 1") : console.log("No soy un 1"); // Devuelve "Soy un 1" porque la condición es verdadera.
+
+// Reto juego piedra, papel o tijera:
+
+var opcion1 = "piedra";
+var opcion2 = "papel";
+var opcion3 = "tijera";
+
+var resultado = function (user, pc) {
+
+    if (user != pc) {
+        if (user === opcion1 && pc === opcion3) {
+            console.log("Ganó el usuario");
+        } else if (user === opcion2 && pc === opcion1) {
+            console.log("Ganó el usuario");
+        } else if (user === opcion3 && pc === opcion2) {
+            console.log("Ganó el usuario");
+        } else {
+            console.log("Ganó la PC");
+        }
+    } else if (user === pc) {
+        console.log("Empate");
+    }
+};
