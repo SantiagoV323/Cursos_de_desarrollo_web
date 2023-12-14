@@ -16,3 +16,31 @@ switch (numero) {   // Dentro de los paréntesis va la condición que queremos e
     default: // El default se ejecuta en caso de que ninguno de los casos anteriores se cumpla.
         console.log("Hola, soy default"); // Si la condición no se cumple, se ejecuta este bloque de código.
 }
+
+
+
+// Reto: Realizar un juego de piedra, papel o tijera con switch.
+
+var opcion1 = "piedra";
+var opcion2 = "papel";
+var opcion3 = "tijera";
+
+var resultado = function (user, pc) {
+
+    switch (true) {
+        case user === pc:
+            console.log("Empate");
+            break;
+        case user === opcion1 && pc === opcion3:
+            console.log("Ganó el usuario");
+            break;
+        case user === opcion2 && pc === opcion1:
+            console.log("Ganó el usuario");
+            break;
+        case user === opcion3 && pc === opcion2:
+            console.log("Ganó el usuario");
+            break;
+        default:
+            console.log("Ganó la computadora");
+    }
+}
