@@ -8,8 +8,15 @@ var miAuto = { // Un objeto tiene propiedades: palabras clave y valores
     marca: "Toyota", // Propiedad es "marca", valor es "Toyota". Es importante la coma
     modelo: "Corolla",
     annio: 2020,
+    detalleDelAuto: function(){ // Un objeto también puede tener funciones
+        console.log(`Auto ${this.modelo} ${this.annio}`); // this hace referencia al objeto
+    }
 };
 
 // Acceder a las propiedades de un objeto
 
 miAuto.marca; // "Toyota"
+
+// llamar a la función dentro del objeto
+
+miAuto.detalleDelAuto(); // Auto Corolla 2020
