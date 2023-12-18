@@ -24,4 +24,10 @@ var nombreArticulos = articulos.map(function (articulo) {
     return articulo.nombre; // Devuelve un array con los nombres de los artículos del array original
 });
 
-// La diferencia entre filter y map es que filter devuelve un array con los elementos que cumplen la condición, mientras que map devuelve un array con los elementos que se mapearon.
+// La diferencia entre filter y map es que filter devuelve un array con los elementos que cumplen la condición, mientras que map crea un nuevo array aplicando una función a cada elemento del array original. Devuelve un nuevo array con los resultados de aplicar la función a cada elemento.
+
+// Cuándo usar cada uno?: 
+
+    //filter es útil cuando deseas reducir el conjunto de elementos de un array según una condición específica. Por ejemplo, filtrar números pares, elementos que cumplen cierta condición, etc.
+
+    //map es útil cuando deseas transformar cada elemento de un array según una operación específica, como obtener el cuadrado de cada número, convertir cada elemento a un formato diferente, etc.
