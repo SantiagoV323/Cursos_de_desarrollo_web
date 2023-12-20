@@ -244,16 +244,84 @@ console.log(`Correcto!`)
 
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 - ¿Qué es un array?
+  - Es una colección ordenada de datos del mismo tipo, de tamaño n
 - ¿Qué es un objeto?
+  - Es un tipo de dato de tamaño n, que almacena propiedades y valores. Este representa una entidad 
 - ¿Cuándo es mejor usar objetos o arrays?
+  - Objetos
+    - Cuando se necesite almacenar datos con nombres de propiedades específicas y valores asociados, especialmente cuando la estructura de datos representa una entidad o concepto con propiedades distintivas.
+  - Arrays
+    - Cuando manejes datos de manera secuencial y necesites acceder a ellos mediante índices numéricos.
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+  - Sí, en ambos sentidos. Se puede tener un array de objetos, o un objeto cuyas propiedades tengan arrays.
+    - Tener un arreglo de objetos es conveniente cuando necesitas representar una colección de entidades relacionadas, donde cada objeto tiene propiedades específicas y únicas que describen sus características individuales.
 
 ### 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+  - _Como dato, en JS no es posible discriminar tipos de datos en los parámetros de una función, por lo que, se debe realizar la verificación dentro del bloque de instrucciones de la misma función_
+
+### Solución:
+``` javascript
+const array = ["Santiago", "Andres", "Valentina", "Diana", "Juliana"];
+
+function printFirstElement(array) {
+    console.log(array[0]);
+};
+
+// Llamado a función
+printFirstElement(array);
+```
+### Solución 2, comprobando si el primer elemento es array o pasar:
+``` javascript
+function printFirstElement(array){
+  if (Array.isArray(array) && array.length>0){
+    console.log(`El primer puesto del array es ${array[0]}`);
+  } else{
+    return;
+  };
+};
+
+const arrayDePrueba = ["Santiago", "Andres", "Valentina", "Diana", "Juliana"];
+
+// Llamada a la función
+printFirstElement(arrayDePrueba);
+```
 
 ### 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+### Solución:
+``` javascript
+function printFirstElement(array){
+  if (Array.isArray(array) && array.length>0){
+    for (let elemento of array){
+      console.log(elemento)
+    };
+  } else {
+    return;
+  }
+};
+
+const arrayDePrueba = ["Santiago", "Andres", "Valentina", "Diana", "Juliana"];
+
+// Llamada a la función
+printFirstElement(arrayDePrueba);
+```
 
 ### 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+``` javascript
+function myFunction(object){
+  for(let key in object){
+    console.log(`${key}: ${object[key]}`) // En caso de que solo se quiera imprimir solo los valores sin las claves, simplemente sería `${object[key]}`
+  }
+};
 
+let objectExample = {
+  name: "Santiago",
+  lastname: "Vega",
+  age: 24,
+  height: 175
+};
+
+myFunction (objectExample);
+```
 ## ¿Cómo te fue? 🏆
 
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
