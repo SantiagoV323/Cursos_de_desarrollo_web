@@ -12,32 +12,68 @@ Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métr
 
 ## Variables y operaciones
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
-- ¿Qué es una variable y para qué sirve?
-- ¿Cuál es la diferencia entre declarar e inicializar una variable?
-- ¿Cuál es la diferencia entre sumar números y concatenar strings?
-- ¿Cuál operador me permite sumar o concatenar?
+1. ¿Qué es una variable y para qué sirve?
+   - ✅ Una variable es un espacio de memoria que permite almacenar datos de distinto tipo.
+2. ¿Cuál es la diferencia entre declarar e inicializar una variable?
+   - ✅ Inicializar una variable es crear (declarar) una variable y asignarle un valor para que se guarde. Declarar una variable, en cambio, es crear dicha variable sin asignarle ningún tipo de dato al bloque de memoria.
+3. ¿Cuál es la diferencia entre sumar números y concatenar strings?
+   - ✅ Sumar números es una operación matemática, concatenar se trata de unir sin mezclar. Es decir, sin que cambien los valores originales que se están empleando.
+4. ¿Cuál operador me permite sumar o concatenar?
+   - ✅ En JS el símbolo + permite realizar ambas operaciones, depende del contexto y la sintaxis si aplica una u otra operación.
 
 ### 2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
 - Nombre
+  - ✅ string
 - Apellido
+  - ✅ string
 - Nombre de usuario en Platzi
+  - ✅ string
 - Edad
+  - ✅ number
 - Correo electrónico
+  - ✅ string
 - Mayor de edad
+  - ✅ boolean
 - Dinero ahorrado
+  - ✅ number
 - Deudas
+  - ✅ number
 
 ### 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
 
+``` javascript
+var nombre = prompt ("Escriba su nombre");
+var apellido = prompt ("Escriba su apellido");
+var user = prompt ("Escriba su nombre de usuario");
+var edad = prompt ("Escriba su edad");
+var correo = prompt ("Escriba su correo electrónico");
+//Si es mayor de edad:
+var edad = prompt("Escriba su edad");
+console.log (edad > 18);
+//
+var ahorro;
+var deuda;
+```
+
 ### 4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 - Nombre completo (nombre y apellido)
+``` javascript
+console.log(nombreCompleto = nombre + " " + apellido)
+```
 - Dinero real (dinero ahorrado menos deudas)
+``` javascript
+console.log(dineroReal = ahorro-deuda)
+```
 
 ## Funciones
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 - ¿Qué es una función?
+  - Una función es un bloque de código que realiza tareas asignadas y tiene la característica de ser reutilizable. Este acepta entradas (argumentos/parámetros) y retornar un dato en concreto resultado de la operación de las tareas dentro de la misma
 - ¿Cuándo me sirve usar una función en mi código?
+  - Siempre que sea posible, ya que las funciones solo pueden aportar ventajas
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+  - Los parámetros son las variables declaradas en la definición de la función que actúan como plantilla cuando se invoque dicha función, para que esta trabaje con ellos.
+  - Los argumentos, son los valores que se le asignan a esas parámetros de la función cuando se llama dicha función.
 
 ### 2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 ```javascript
@@ -46,7 +82,20 @@ const lastname = "Castro Gallego";
 const completeName = name + lastname;
 const nickname = "juandc";
 
+
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+```
+### Solución:
+``` javascript
+const name = prompt ("Escriba su nombre");
+const lastname = prompt ("Escriba su apellido");
+const completeName = name + lastname;
+const nickname = prompt ("Escriba su nickname");
+
+
+function info (completeName, nickname){
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+}
 ```
 
 ## Condicionales
