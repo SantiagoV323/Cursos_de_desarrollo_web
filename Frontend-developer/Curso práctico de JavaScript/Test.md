@@ -87,22 +87,28 @@ console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + n
 ```
 ### Solución:
 ``` javascript
-const name = prompt ("Escriba su nombre");
-const lastname = prompt ("Escriba su apellido");
-const completeName = name + lastname;
-const nickname = prompt ("Escriba su nickname");
-
-
-function info (completeName, nickname){
+function info (name, lastname, nickname){
+    const completeName = name + " " + lastname;
     console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
 }
+
+info(prompt("Escriba su nombre"), prompt("Escriba su apellido"), prompt("Escriba su nickname"));
 ```
 
 ## Condicionales
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 - ¿Qué es un condicional?
+  - Es un bloque de código que ejecuta unas instrucciones u otras basándose en si una condición específica es verdadera o falsa.
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+  - If
+    - Se utiliza cuando tienes una condición booleana para evaluar (verdadero/falso).
+    - Puedes tener múltiples bloques else if para evaluar condiciones adicionales.
+  - Switch
+    - Se utiliza cuando quieres comparar una expresión con varios valores posibles.
+    - Cada case representa un valor específico.
+    - La ejecución se detiene cuando se encuentra un case que coincide (se debe usar break)
 - ¿Puedo combinar funciones y condicionales?
+  - Sí
 
 ### 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
@@ -124,15 +130,74 @@ switch (tipoDeSuscripcion) {
        break;
 }
 ```
+### Solución
+``` javascript
+const tipoDeSuscripción = "Basic"
+
+if (tipoDeSuscripción === "Basic"){
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+} else if (tipoDeSuscripción === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+} else if (tipoDeSuscripción === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+} else if (tipoDeSuscripción === "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+```
 ### 3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+### Solución con solo if:
+``` javascript
+const tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+}
+
+if (tipoDeSuscripcion === "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}
+
+if (tipoDeSuscripcion === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}
+
+if (tipoDeSuscripcion === "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+}
+
+```
+### Solución 2:
+``` javascript
+
+const tipoDeSuscripcion = "ExpertPlus";
+
+let suscripciones = {
+    Free: 'Solo puedes tomar los cursos gratis',
+    Basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes',
+    Expert: 'Puedes tomar casi todos los cursos de Platzi durante un año',
+    ExpertPlus: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año'
+};
+
+const mensaje = suscripciones[tipoDeSuscripcion]; // Los objetos pueden ser accesados similar a un array, en este caso está usando tipoDeSuscripcion como clave para encontrar la propiedad correspondiente en el objeto suscripciones.
+// Traducido a lenguaje natural está diciendo: Dentro de suscripciones, busque tipoDeSuscripcion
+if (mensaje){
+    console.log(`Según su suscripción, ${mensaje}`)
+} else {
+    console.log("No está suscrito")
+}
+```
 
 ## Ciclos
 ### 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 - ¿Qué es un ciclo?
+  - Un ciclo o bucle es una instrucción de código que se ejecuta hasta el final y se repite hasta que se cumpla la condición
 - ¿Qué tipos de ciclos existen en JavaScript?
+  - Existen cuatro tipos de bucles for: for, for in, for of y for await of.
 - ¿Qué es un ciclo infinito y por qué es un problema?
+  - Un ciclo infinito es aquel en el que su condición no se cumplirá jamás, por lo tanto iterará indefinidamente. Es peligroso porque consumirá recursos progresivamente hasta generar un fallo a nivel de software o hardware.
 - ¿Puedo mezclar ciclos y condicionales?
+  - Sí.
 
 ### 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 ``` javascript
@@ -144,8 +209,36 @@ for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
 }
 ```
+### Solución ejercicio 1:
+``` javascript
+let i = 0;
+
+while (i<5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+```
+### Solución ejercicio 2:
+``` javascript
+let i = 10;
+
+while (i>=2) {
+    console.log(`El valor de i es: ${i}`);
+    i--;
+}
+```  
 ### 3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 💡 Pista: puedes usar la función prompt de JavaScript.
+### Solución:
+``` javascript
+let pregunta = prompt("Cuánto es 2+2")
+
+while (pregunta !== "4"){
+    console.log(`Intente de nuevo`)
+    pregunta = prompt("Cuánto es 2+2")
+}
+console.log(`Correcto!`)
+```
 
 ## Listas
 
